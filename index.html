@@ -18,6 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -66,7 +67,9 @@
           ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br />
           ВАШОГО БІЗНЕСУ
         </h1>
-        <button class="hero-btn" type="button">Замовити послугу</button>
+        <button class="hero-btn" type="button" data-modal-open>
+          Замовити послугу
+        </button>
       </div>
     </section>
     <main>
@@ -113,28 +116,34 @@
 
           <ul class="image">
             <li class="image-title list">
-              <img
-                src="./images/img.1.jpg"
-                alt="Людина працює за комп'ютером"
-                width="370"
-                height="294"
-              />
+              <div class="image-text">
+                <img
+                  src="./images/img.1.jpg"
+                  alt="Людина працює за комп'ютером"
+                  width="370"
+                />
+                <p class="image-top-text">Десктопні додатки</p>
+              </div>
             </li>
             <li class="image-title list">
-              <img
-                src="./images/img.2.jpg"
-                alt="Робата за комп'ютером та з телефоном"
-                width="370"
-                height="294"
-              />
+              <div class="image-text">
+                <img
+                  src="./images/img.2.jpg"
+                  alt="Робата за комп'ютером та з телефоном"
+                  width="370"
+                />
+                <p class="image-top-text">Мобільні додатки</p>
+              </div>
             </li>
             <li class="image-title list">
-              <img
-                src="./images/img.3.jpg"
-                alt="Робота за планшетом"
-                width="370"
-                height="294"
-              />
+              <div class="image-text">
+                <img
+                  src="./images/img.3.jpg"
+                  alt="Робота за планшетом"
+                  width="370"
+                />
+                <p class="image-top-text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -439,5 +448,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon" width="11" height="11">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
